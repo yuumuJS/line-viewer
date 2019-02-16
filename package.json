@@ -1,0 +1,17 @@
+{
+    "name": "line",
+    "version": "1.0.0",
+    "description": "",
+    "main": "parse.mjs",
+    "scripts": {
+        "start": "node --experimental-modules parse.mjs",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://sakuma0831@bitbucket.org/sakuma0831/line.git"
+    },
+    "author": "yuumu",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/sakuma0831/line#readme"
+}
