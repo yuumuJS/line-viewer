@@ -2,9 +2,9 @@
     "name": "line",
     "version": "1.0.0",
     "description": "",
-    "main": "parse.mjs",
+    "main": "app.mjs",
     "scripts": {
-        "start": "node --experimental-modules parse.mjs",
+        "start": "node --experimental-modules app.mjs",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
