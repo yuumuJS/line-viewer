@@ -7,4 +7,4 @@ const talkData = parseLineTalk(talk);
 
 console.log(talkData);
 
-console.log(talkData['2019/01/18'][2]['text']);
+// console.log(JSON.stringify(talkData));
