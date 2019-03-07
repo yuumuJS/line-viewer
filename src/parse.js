@@ -3,7 +3,7 @@ const parseLineTalk = (talkText) => {
 
     // const save = /^保存日時：\d{4}\/\d{2}\/\d{2}\s\d{2}:\d{2}$/;
     // const empty = /^\n$/;
-    const datePattern = /^(20\d{2}[\/|\.]\d{2}[\/|\.]\d{2})\s?\(?[月火水木金土日](曜日)?\)?$/;
+    const datePattern = /^(20\d{2}[/|.]\d{2}[/|.]\d{2})\s?\(?[月火水木金土日](曜日)?\)?$/;
     const talkPattern = /^(\d{2}:\d{2})\t(.*)\t(.*)$/;
 
     const talkData = {};
@@ -30,12 +30,20 @@ const parseLineTalk = (talkText) => {
             });
             talkIndex -= 1;
             talkBreakLineCount = 1;
+            // 行頭のダブルクォートを消す
+            if (talkMatched[3].match(/"{1}.*/) && (index + 1 !== (talkMatched && dateMatched))) {
+                talkMatched[3].replace(/"{1}/,'');
+            }
         }
         // それ以外
         else {
             if (talkArray[index - talkBreakLineCount] && talkArray[index - talkBreakLineCount].match(talkPattern)) {
                 talkData[datePoint][talkIndex]['text'] += '\n' + value;
                 talkBreakLineCount += 1;
+                // 行末のダブルクォートを消す
+                if (value.match(/^.*"{1}$/)) {
+                    value.replace(/"{1}/,"");
+                }
             }
         }
     });

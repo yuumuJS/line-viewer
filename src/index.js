@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { parseLineTalk } from './parse';
-// import './index.css';
+import './index.css';
 // import App from './App';
 import Talk from './components/talk/talk';
 import * as serviceWorker from './serviceWorker';

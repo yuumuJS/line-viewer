@@ -1,1 +1,48 @@
-.balloon {}
+.balloon {
+    position: relative;
+}
+.balloon .user {
+     font-size: 8px;
+     color: #fff;
+}
+.balloon .text {
+    position: relative;
+    display: inline-block;
+    padding: 3px 13px;
+    font-size: 11px;
+    white-space: pre-line;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 5px;
+    /* left */
+    margin-left: 10px;
+}
+.balloon .text:before,
+.balloon .text:after {
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    border-width: 5px;
+    transform: rotate(20deg);
+}
+.balloon .text:before {
+    border-right-color: #000000;
+    margin: -1px 0 0 -6px;
+}
+.balloon .text:after {
+    border-right-color: #FFFFFF;
+    margin-top: -1px;
+    margin-left: -5px;
+}
+.balloon .time {
+    position: absolute;
+    bottom: 0;
+    display: inline;
+    margin-left: 2px;
+    font-size: 8px;
+}

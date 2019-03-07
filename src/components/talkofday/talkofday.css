@@ -1,0 +1,16 @@
+.talkOfDay {
+    margin-top: 20px;
+}
+
+h2 {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 3px 13px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(60,60,60,.3);
+    border-radius: 10px;
+}
