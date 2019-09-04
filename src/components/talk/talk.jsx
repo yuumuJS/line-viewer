@@ -8,7 +8,7 @@ export default class Talk extends Component {
       <div className="talk">
         <h1>{this.props.title}</h1>
         {this.props.talks.map((talk) => {
-            return <TalkOfDay date={talk.date} talksOfDay={talk.talksOfDay} />;
+            return <TalkOfDay date={talk.date} talksOfDay={talk.talksOfDay} my={this.props.my} />;
         })}
       </div>
     );

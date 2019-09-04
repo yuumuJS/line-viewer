@@ -1,10 +1,32 @@
 .balloon {
+    display: inline-block;
     position: relative;
+    margin-bottom: 0.5em;
 }
+
+.balloon:last-child {
+    margin-bottom: 0;
+}
+
+.balloon.right {
+    align-self: flex-end;
+    margin-right: 5px;
+}
+
+.balloon.left {
+    align-self: flex-start;
+    margin-left: 5px;
+}
+
 .balloon .user {
-     font-size: 8px;
-     color: #fff;
+    font-size: 8px;
+    color: #fff;
 }
+
+.balloon.right .user {
+    display: none;
+}
+
 .balloon .text {
     position: relative;
     display: inline-block;
@@ -12,37 +34,45 @@
     font-size: 11px;
     white-space: pre-line;
     color: #000;
-    border: 1px solid #000;
     background-color: #fff;
-    border-radius: 5px;
-    /* left */
-    margin-left: 10px;
+    border-radius: 11px;
 }
-.balloon .text:before,
-.balloon .text:after {
-    position: absolute;
-    left: -5px;
-    top: 3px;
-    border: solid transparent;
+
+.balloon .text::before {
     content: '';
-    height: 0;
+    display: inline-block;
     width: 0;
-    border-width: 5px;
-    transform: rotate(20deg);
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: .1em;
 }
-.balloon .text:before {
-    border-right-color: #000000;
-    margin: -1px 0 0 -6px;
+
+.balloon.right .text::before {
+    right: .1em;
+    border-width: 0 6px 6px 0;
+    border-color: transparent #ffffff transparent transparent;
 }
-.balloon .text:after {
-    border-right-color: #FFFFFF;
-    margin-top: -1px;
-    margin-left: -5px;
+
+.balloon.left .text::before {
+    left: .1em;
+    border-width: 6px 6px 0 0;
+    border-color: #ffffff transparent transparent transparent;
 }
+
 .balloon .time {
     position: absolute;
     bottom: 0;
-    display: inline;
-    margin-left: 2px;
+    display: inline-block;
     font-size: 8px;
+}
+
+.balloon.left .time {
+    right: -30px;
+}
+
+.balloon.right .time {
+    left: -30px;
 }

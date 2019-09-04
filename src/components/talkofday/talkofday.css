@@ -11,6 +11,11 @@ h2 {
     font-weight: normal;
     text-align: center;
     color: #fff;
-    background-color: rgba(60,60,60,.3);
+    background-color: rgba(60, 60, 60, .3);
     border-radius: 10px;
+}
+
+.balloons {
+    display: flex;
+    flex-direction: column;
 }

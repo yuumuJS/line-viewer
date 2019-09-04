@@ -23,6 +23,10 @@ const parseLineTalk = (talkText) => {
         }
         // 時間から始まるトーク
         else if (talkMatched) {
+            // 行頭のダブルクォートを消す
+            if (talkMatched[3].indexOf('"') === 0) {
+                talkMatched[3] = talkMatched[3].slice(1);
+            }
             talkIndex = talkData[datePoint].push({
                 time: talkMatched[1],
                 user: talkMatched[2],
@@ -34,6 +38,10 @@ const parseLineTalk = (talkText) => {
         // それ以外
         else {
             if (talkArray[index - talkBreakLineCount] && talkArray[index - talkBreakLineCount].match(talkPattern)) {
+                // 行末のダブルクォートを消す
+                if (value.slice(-1) === '"') {
+                    value = value.slice(0, -1);
+                }
                 talkData[datePoint][talkIndex]['text'] += '\n' + value;
                 talkBreakLineCount += 1;
             }

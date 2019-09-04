@@ -5,6 +5,7 @@ import './index.css';
 // import App from './App';
 import Talk from './components/talk/talk';
 import * as serviceWorker from './serviceWorker';
+import { getMembers } from './member';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -35,9 +36,12 @@ const line = `[LINE] testのトーク履歴
 `;
 
 const talks = parseLineTalk(line);
+const members = getMembers(talks);
+const my = members[0];
 
 ReactDOM.render( < Talk title = 'hoge'
         talks = { talks }
+        my = { my }
         /> , document.getElementById('root'));
 
         // If you want your app to work offline and load faster, you can change
