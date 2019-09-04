@@ -7,7 +7,7 @@ export default class TalkOfDay extends Component {
     return (
       <div className="talkOfDay">
         <h2>{this.props.date}</h2>
-        <div class="balloons">
+        <div className="balloons">
           {this.props.talksOfDay.map((talk) => {
               return <Balloon user={talk.user} text={talk.text} time={talk.time} myTalk={this.props.my === talk.user} />;
           })}
