@@ -1,5 +1,8 @@
 .talk {
-    background-color: #5676ca;
+    background-color: #5F9BCE;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 5em;
 }
 
 h1 {
@@ -9,4 +12,20 @@ h1 {
     font-weight: normal;
     color: #fff;
     background-color: #364877;
+}
+
+.memberList {
+  margin-top: 1em;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  border: 1px solid #000;
+}
+
+.question {
+  border-bottom: 1px solid #000;
 }

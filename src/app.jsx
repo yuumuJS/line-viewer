@@ -16,12 +16,11 @@ class App extends Component {
 
     render() {
         return <BrowserRouter>
-            <ul>
-                <li>
-                    <FileSelect onSelected={(title, content) => {this.setState({fileName: title, talkText: content})}}/>
-                    <Link to='/talkroom'>はじめる</Link>
-                </li>
-            </ul>
+            <div>
+                <span class="title">LINE VIEWER</span>
+                <FileSelect onSelected={(title, content) => {this.setState({fileName: title, talkText: content})}}/>
+                <Link to='/talkroom'><button className="submit">はじめる</button></Link>
+            </div>
             <Route path='/talkroom' render={() => {
                 if (this.state.talkText === '') {
                     return <Redirect to='/'/>

@@ -1,5 +1,6 @@
 .balloon {
     display: inline-block;
+    max-width: 70%;
     position: relative;
     margin-bottom: 0.5em;
 }
@@ -11,6 +12,7 @@
 .balloon.right {
     align-self: flex-end;
     margin-right: 5px;
+    text-align: right;
 }
 
 .balloon.left {
@@ -30,12 +32,12 @@
 .balloon .text {
     position: relative;
     display: inline-block;
-    padding: 3px 13px;
+    padding: .5em 1em;
     font-size: 11px;
     white-space: pre-line;
     color: #000;
     background-color: #fff;
-    border-radius: 11px;
+    border-radius: 15px;
 }
 
 .balloon .text::before {
@@ -45,15 +47,19 @@
     height: 0;
     border-style: solid;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     right: 0;
-    top: .1em;
+    top: .2em;
+}
+
+.balloon.right .text {
+    background-color: #8FD691;
 }
 
 .balloon.right .text::before {
     right: .1em;
     border-width: 0 6px 6px 0;
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #8FD691 transparent transparent;
 }
 
 .balloon.left .text::before {

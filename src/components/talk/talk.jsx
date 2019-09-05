@@ -31,8 +31,8 @@ export default class Talk extends Component {
             onRequestClose={() => {this.closeModal()}}
             shouldCloseOnOverlayClick={this.state.myName !== ''}
             >
-              <h1>自分の名前を選択してください</h1>
-              <ul>
+              <p className="question">自分の名前を選択してください</p>
+              <ul className="memberList">
                 {getMembers(this.props.talks).map((member) => {
                   return <li onClick={() => {
                     this.setState({myName: member, isShowModal: false});

@@ -14,3 +14,35 @@ code {
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1em 0 0.5em;
+}
+
+input[type="file"] {
+    display: block;
+    outline: 0;
+    margin: 0 auto 1em;
+    border: 1px solid #5676ca;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto 3em;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    width: 80%;
+    color: #ffffff;
+    background-color: #8FD691;
+}
