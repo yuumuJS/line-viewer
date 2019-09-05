@@ -22,7 +22,7 @@
     },
     "author": "yuumu",
     "license": "ISC",
-    "homepage": "https://bitbucket.org/sakuma0831/line#readme",
+    "homepage": "./",
     "eslintConfig": {
         "extends": "react-app"
     },
