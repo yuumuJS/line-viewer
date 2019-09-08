@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import './FileSelect.css';
 
 export default class FileSelect extends Component {
+
     handleChangeFile(e) {
         const target = e.target;
         const file = target.files.item(0);
@@ -13,7 +15,10 @@ export default class FileSelect extends Component {
 
     render() {
         return (
-            <input type='file' onChange={(e) => {this.handleChangeFile(e)}} />
+            <label>
+                ファイルを選択
+                <input type='file' onChange={(e) => {this.handleChangeFile(e)}} />
+            </label>
         );
     }
 }

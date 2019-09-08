@@ -1,0 +1,15 @@
+label {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: .5em 1em;
+    width: 200px;
+    display: block;
+    margin: 0 auto 2em;
+    text-align: center;
+
+}
+
+input[type="file"] {
+    display: none;
+}

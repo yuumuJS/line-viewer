@@ -1,8 +1,8 @@
 .talk {
-    background-color: #5676ca;
+    background-color: #5f9bce;
 }
 
-h1 {
+.talk_title {
     padding: 10px 0;
     font-size: 18px;
     text-align: center;
