@@ -18,6 +18,7 @@
 .balloon.left {
     align-self: flex-start;
     margin-left: 5px;
+    text-align: left;
 }
 
 .balloon .user {
@@ -27,6 +28,11 @@
 
 .balloon.right .user {
     display: none;
+}
+
+.balloon.right .text {
+    background-color: #8fd691;
+    text-align: left;
 }
 
 .balloon .text {
@@ -53,14 +59,10 @@
     top: .2em;
 }
 
-.balloon.right .text {
-    background-color: #8FD691;
-}
-
 .balloon.right .text::before {
     right: .1em;
     border-width: 0 6px 6px 0;
-    border-color: transparent #8FD691 transparent transparent;
+    border-color: transparent #8fd691 transparent transparent;
 }
 
 .balloon.left .text::before {

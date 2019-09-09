@@ -1,15 +1,25 @@
+
+
 label {
     background: #fff;
     color: #000;
     cursor: pointer;
     padding: .5em 1em;
-    width: 200px;
-    display: block;
     margin: 0 auto 2em;
     text-align: center;
-
+    min-width: 200px;
+    font-size: 12px;
 }
 
 input[type="file"] {
     display: none;
+}
+
+.fileName {
+    display: inline-block;
+    text-align: center;
+    padding: .5em 1em;
+    background-color: #97ff97 ;
+    border-radius: 15px;
+    margin-left: 1em;
 }

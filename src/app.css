@@ -19,6 +19,7 @@ a {
 }
 
 main {
+    position: relative;
     background: linear-gradient(to bottom,#97ff97 0%,#00ec00 100%);
     min-height: 100vh;
     display: flex;
