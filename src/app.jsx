@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { parseLineTalk } from './parse';
-import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Link, Redirect,Switch } from 'react-router-dom'
 import Talk from './components/talk/talk';
 import FileSelect from "./components/file_select/FileSelect";
 import './app.css';
@@ -16,19 +16,25 @@ class App extends Component {
     }
 
     render() {
-        return <main className="title">
+        return (
             <BrowserRouter>
-                <h1 className="app_title"><img src={logo} alt="Logo" /></h1>
-                <FileSelect onSelected={(title, content) => {this.setState({fileName: title, talkText: content})}}/>
-                <Link to='/talkroom'><button className="app_trigger">はじめる</button></Link>
-                <Route path='/talkroom' render={() => {
+                <Switch>
+                <Route exact path='/' render={() => (
+                    <main className="title">
+                    <h1 className="app_title"><img src={logo} alt="Logo" /></h1>
+                    <FileSelect onSelected={(title, content) => { this.setState({ fileName: title, talkText: content }) }} />
+                    <Link to='/talkroom'><button className="app_trigger">はじめる</button></Link>
+                    </main>
+                )} />
+                <Route exact path='/talkroom' render={() => {
                     if (this.state.talkText === '') {
                         return <Redirect to='/'/>
                     }
                     return <Talk title={this.state.fileName} talks={parseLineTalk(this.state.talkText)} />;
                 }}/>
+                </Switch>
             </BrowserRouter>
-        </main>;
+        );
     }
 }
 
