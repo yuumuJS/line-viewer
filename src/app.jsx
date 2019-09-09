@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom'
 import Talk from './components/talk/talk';
 import FileSelect from "./components/file_select/FileSelect";
 import './app.css';
+import logo from './logo.svg';
 
 class App extends Component {
     constructor(props) {
@@ -15,19 +16,19 @@ class App extends Component {
     }
 
     render() {
-        return <BrowserRouter>
-            <div>
-                <span class="title">LINE VIEWER</span>
+        return <main className="title">
+            <BrowserRouter>
+                <h1 className="app_title"><img src={logo} alt="Logo" /></h1>
                 <FileSelect onSelected={(title, content) => {this.setState({fileName: title, talkText: content})}}/>
-                <Link to='/talkroom'><button className="submit">はじめる</button></Link>
-            </div>
-            <Route path='/talkroom' render={() => {
-                if (this.state.talkText === '') {
-                    return <Redirect to='/'/>
-                }
-                return <Talk title={this.state.fileName} talks={parseLineTalk(this.state.talkText)} />;
-            }}/>
-        </BrowserRouter>;
+                <Link to='/talkroom'><button className="app_trigger">はじめる</button></Link>
+                <Route path='/talkroom' render={() => {
+                    if (this.state.talkText === '') {
+                        return <Redirect to='/'/>
+                    }
+                    return <Talk title={this.state.fileName} talks={parseLineTalk(this.state.talkText)} />;
+                }}/>
+            </BrowserRouter>
+        </main>;
     }
 }
 

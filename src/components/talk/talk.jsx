@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactModal from 'react-modal';
-import TalkOfDay from '../talkofday/talkofday'; 
+import TalkOfDay from '../talkofday/talkofday';
 import './talk.css';
-import {getMembers} from "../../member";
+import { getMembers } from "../../member";
 
 export default class Talk extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ export default class Talk extends Component {
                 })}
               </ul>
             </ReactModal> : null}
-        <h1>{this.props.title}</h1>
+        <h1 className="talk_title">{this.props.title}</h1>
         {this.props.talks.map((talk) => {
             return <TalkOfDay date={talk.date} talksOfDay={talk.talksOfDay} my={this.state.myName} />;
         })}
