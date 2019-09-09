@@ -14,18 +14,40 @@
     background-color: #364877;
 }
 
+.modalContent {
+  position: absolute;
+  max-width: 400px;
+  width: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2em;
+  max-height: 80vh;
+  border-radius: 1em;
+  background: #5F9BCE;
+  outline: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
 .memberList {
   margin-top: 1em;
 }
 
-li {
-  list-style: none;
-  margin-bottom: 0.5em;
+.member {
+  color: #000;
   padding: 0.5em 1em;
-  border-radius: 25px;
-  border: 1px solid #000;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  display: inline-block;
+  border-radius: 1.5em;
+  list-style: none;
+  background-color: #fff;
 }
 
-.question {
-  border-bottom: 1px solid #000;
+.member:hover,
+.member:active {
+  background-color: #8FD691;
 }

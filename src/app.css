@@ -4,7 +4,6 @@ body {
     font-family: YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    max-width: 640px;
     width: 100%;
     min-width: 320px;
     margin: 0 auto;
@@ -19,17 +18,12 @@ a {
     text-decoration: none;
 }
 
-a:active,
-a:hover,
-a:visited,
-a:focus {
-    border-bottom: 0;
-}
-
 main {
-    padding: 5vh 0px;
     background: linear-gradient(to bottom,#97ff97 0%,#00ec00 100%);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .app_title {
@@ -46,4 +40,10 @@ main {
     margin: 0 auto;
     border: 0;
     color: #fff;
+    outline: 0;
+}
+
+.app_trigger:active,
+.app_trigger:hover {
+    border-bottom: 1px solid #fff;
 }

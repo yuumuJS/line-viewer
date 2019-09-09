@@ -32,6 +32,7 @@
 .balloon .text {
     position: relative;
     display: inline-block;
+    text-align: left;
     padding: .5em 1em;
     font-size: 11px;
     white-space: pre-line;
