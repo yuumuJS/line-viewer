@@ -10,8 +10,6 @@ skip_files:
   - src
   - talk.txt
   - line-viewer.iml
-  - parse-test.mjs
-  - parse.mjs
 
 handlers:
   - url: /(.*\.[0-9a-zA-Z]+)
