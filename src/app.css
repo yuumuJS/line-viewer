@@ -1,50 +1,51 @@
 @import url(~ress/ress.css);
 
 body {
-    font-family: YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-    min-width: 320px;
-    margin: 0 auto;
+	font-family: YuGothic, YuGothicM, 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo,
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 a {
-    color: #000000;
-    text-decoration: none;
+	color: #000000;
+	text-decoration: none;
 }
 
 main {
-    position: relative;
-    background: linear-gradient(to bottom,#97ff97 0%,#00ec00 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	position: relative;
+	background: linear-gradient(to bottom, #97ff97 0%, #00ec00 100%);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .app_title {
-    display: block;
-    width: 210px;
-    max-width: 80%;
-    margin: 0 auto 3em;
+	display: block;
+	width: 210px;
+	max-width: 80%;
+	margin: 0 auto 3em;
 }
 
 .app_trigger {
-    font-size: 1.2rem;
-    font-weight: 700;
-    display: block;
-    margin: 0 auto;
-    border: 0;
-    color: #fff;
-    outline: 0;
+	font-size: 1.2rem;
+	font-weight: 700;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	color: #fff;
+	outline: 0;
 }
 
 .app_trigger:active,
 .app_trigger:hover {
-    border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 }
