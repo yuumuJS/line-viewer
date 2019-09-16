@@ -32,9 +32,11 @@ class App extends Component {
                     this.setState({ fileName: title, talkText: content });
                   }}
                 />
-                <Link to="/talkroom">
-                  <button className="app_trigger">はじめる</button>
-                </Link>
+                {this.state.fileName ? (
+                  <Link to="/talkroom">
+                    <button className="app_trigger">はじめる</button>
+                  </Link>
+                ) : null}
               </main>
             )}
           />

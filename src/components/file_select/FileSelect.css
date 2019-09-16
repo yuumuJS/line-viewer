@@ -1,12 +1,18 @@
 label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 4em;
   background: #fff;
   color: #000;
   cursor: pointer;
-  padding: 0.5em 1em;
   margin: 0 auto 2em;
-  text-align: center;
   min-width: 200px;
   font-size: 12px;
+  max-width: 95%;
+  padding: .5em 1em;
+  transition: .3s;
 }
 
 input[type='file'] {
@@ -19,5 +25,5 @@ input[type='file'] {
   padding: 0.5em 1em;
   background-color: #97ff97;
   border-radius: 15px;
-  margin-left: 1em;
+  word-break: break-all;
 }
