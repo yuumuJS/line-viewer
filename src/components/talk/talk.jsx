@@ -3,6 +3,7 @@ import ReactModal from 'react-modal';
 import TalkOfDay from '../talkofday/talkofday';
 import './talk.css';
 import { getMembers } from '../../member';
+import speaker from '../../speaker.svg';
 
 export default class Talk extends Component {
   constructor(props) {
@@ -51,7 +52,17 @@ export default class Talk extends Component {
             </ul>
           </ReactModal>
         ) : null}
-        <h1 className="talk_title">{this.props.title}</h1>
+        <header className="talk_header">
+          <h1 className="talk_title">{this.props.title}</h1>
+          <button
+            className="talk_speaker"
+            onClick={() => {
+              this.openModal();
+            }}
+          >
+            <img src={speaker} alt="" />
+          </button>
+        </header>
         {this.props.talks.map(talk => {
           return (
             <TalkOfDay

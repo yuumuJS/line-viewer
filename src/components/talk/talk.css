@@ -5,6 +5,10 @@
   padding-bottom: 5em;
 }
 
+.talk_header {
+  position: relative;
+}
+
 .talk_title {
   padding: 10px 0;
   font-size: 18px;
@@ -12,6 +16,21 @@
   font-weight: normal;
   color: #fff;
   background-color: #364877;
+}
+
+.talk_speaker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.5em;
+  width: 37px;
+  outline: 0;
+}
+
+.talk_speaker img {
+  display: block;
+  width: 100%;
 }
 
 .modalContent {
