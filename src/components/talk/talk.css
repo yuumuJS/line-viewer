@@ -1,53 +1,53 @@
 .talk {
-	background-color: #5f9bce;
-	width: 100%;
-	overflow: hidden;
-	padding-bottom: 5em;
+  background-color: #5f9bce;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 5em;
 }
 
 .talk_title {
-	padding: 10px 0;
-	font-size: 18px;
-	text-align: center;
-	font-weight: normal;
-	color: #fff;
-	background-color: #364877;
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+  background-color: #364877;
 }
 
 .modalContent {
-	position: absolute;
-	max-width: 400px;
-	width: 80%;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	padding: 2em;
-	max-height: 80vh;
-	border-radius: 1em;
-	background: #5f9bce;
-	outline: 0;
-	color: #fff;
-	font-size: 15px;
+  position: absolute;
+  max-width: 400px;
+  width: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2em;
+  max-height: 80vh;
+  border-radius: 1em;
+  background: #5f9bce;
+  outline: 0;
+  color: #fff;
+  font-size: 15px;
 }
 
 .memberList {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 .member {
-	color: #000;
-	padding: 0.5em 1em;
-	margin-bottom: 0.5em;
-	margin-right: 1em;
-	display: inline-block;
-	border-radius: 1.5em;
-	list-style: none;
-	background-color: #fff;
+  color: #000;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  display: inline-block;
+  border-radius: 1.5em;
+  list-style: none;
+  background-color: #fff;
 }
 
 .member:hover,
 .member:active {
-	background-color: #8fd691;
+  background-color: #8fd691;
 }

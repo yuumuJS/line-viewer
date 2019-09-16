@@ -1,21 +1,21 @@
 .talkOfDay {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 h2 {
-	display: block;
-	padding: 0.5em 1em;
-	width: 120px;
-	font-size: 13px;
-	font-weight: normal;
-	text-align: center;
-	color: #fff;
-	background-color: rgba(60, 60, 60, 0.3);
-	border-radius: 15px;
-	margin: 0 auto 0.3em;
+  display: block;
+  padding: 0.5em 1em;
+  width: 120px;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.3);
+  border-radius: 15px;
+  margin: 0 auto 0.3em;
 }
 
 .balloons {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

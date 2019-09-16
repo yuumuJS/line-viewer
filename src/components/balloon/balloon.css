@@ -1,87 +1,87 @@
 .balloon {
-	display: inline-block;
-	max-width: 70%;
-	position: relative;
-	margin-bottom: 0.5em;
+  display: inline-block;
+  max-width: 70%;
+  position: relative;
+  margin-bottom: 0.5em;
 }
 
 .balloon:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .balloon.right {
-	align-self: flex-end;
-	margin-right: 5px;
-	text-align: right;
+  align-self: flex-end;
+  margin-right: 5px;
+  text-align: right;
 }
 
 .balloon.left {
-	align-self: flex-start;
-	margin-left: 5px;
-	text-align: left;
+  align-self: flex-start;
+  margin-left: 5px;
+  text-align: left;
 }
 
 .balloon .user {
-	font-size: 8px;
-	color: #fff;
+  font-size: 8px;
+  color: #fff;
 }
 
 .balloon.right .user {
-	display: none;
+  display: none;
 }
 
 .balloon.right .text {
-	background-color: #8fd691;
-	text-align: left;
+  background-color: #8fd691;
+  text-align: left;
 }
 
 .balloon .text {
-	position: relative;
-	display: inline-block;
-	text-align: left;
-	padding: 0.5em 1em;
-	font-size: 11px;
-	white-space: pre-line;
-	color: #000;
-	background-color: #fff;
-	border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding: 0.5em 1em;
+  font-size: 11px;
+  white-space: pre-line;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .balloon .text::before {
-	content: '';
-	display: inline-block;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	position: absolute;
-	z-index: 0;
-	right: 0;
-	top: 0.2em;
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0.2em;
 }
 
 .balloon.right .text::before {
-	right: 0.1em;
-	border-width: 0 6px 6px 0;
-	border-color: transparent #8fd691 transparent transparent;
+  right: 0.1em;
+  border-width: 0 6px 6px 0;
+  border-color: transparent #8fd691 transparent transparent;
 }
 
 .balloon.left .text::before {
-	left: 0.1em;
-	border-width: 6px 6px 0 0;
-	border-color: #ffffff transparent transparent transparent;
+  left: 0.1em;
+  border-width: 6px 6px 0 0;
+  border-color: #ffffff transparent transparent transparent;
 }
 
 .balloon .time {
-	position: absolute;
-	bottom: 0;
-	display: inline-block;
-	font-size: 8px;
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  font-size: 8px;
 }
 
 .balloon.left .time {
-	right: -30px;
+  right: -30px;
 }
 
 .balloon.right .time {
-	left: -30px;
+  left: -30px;
 }
