@@ -3,6 +3,7 @@ import { parseLineTalk } from './parse';
 import { BrowserRouter, Route, Link, Redirect, Switch } from 'react-router-dom';
 import Talk from './components/talk/talk';
 import FileSelect from './components/file_select/FileSelect';
+import Tutorial from './components/tutorial/tutorial';
 import './app.css';
 import logo from './logo.svg';
 
@@ -27,6 +28,7 @@ class App extends Component {
                 <h1 className="app_title">
                   <img src={logo} alt="Logo" />
                 </h1>
+                <Tutorial />
                 <FileSelect
                   onSelected={(title, content) => {
                     this.setState({ fileName: title, talkText: content });

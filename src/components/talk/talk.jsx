@@ -32,6 +32,7 @@ export default class Talk extends Component {
             onRequestClose={() => {
               this.closeModal();
             }}
+            ariaHideApp={false}
             shouldCloseOnOverlayClick={this.state.myName !== ''}
             className="modalContent"
           >
